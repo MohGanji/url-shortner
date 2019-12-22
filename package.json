@@ -1,0 +1,45 @@
+{
+  "name": "url-shortner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "BASE_URL=http://localhost:3000 JWT_SECRET=suicideSquad REDIS_URI=redis MONGO_URI=mongodb://mongo:27017/url-shortner APP_NAME=url-shortner node index",
+    "test": "BASE_URL=http://localhost:3000 MONGO_URI=mongodb://mongo:27017/url-shortner-test APP_NAME=url-shortner NODE_ENV=test jest --runInBand --bail --forceExit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "2",
+    "babel-eslint": "^10.0.3",
+    "bluebird": "^3.7.1",
+    "ioredis": "^3.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.4.1",
+    "koa-body": "^2.5.0",
+    "koa-ejs": "^4.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-useragent": "^3.0.0",
+    "md5": "^2.2.1",
+    "mongoose": "^5.8.2",
+    "sharp": "^0.23.3",
+    "shortid": "^2.2.15",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^22.4.2",
+    "supertest": "^3.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": []
+  }
+}

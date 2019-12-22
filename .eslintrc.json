@@ -1,0 +1,24 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "expect": "readonly",
+    "test": "readonly",
+    "beforeEach": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "plugins": ["prettier"],
+
+  "rules": {
+    "no-console": "off",
+    "prefer-object-spread": "off"
+  }
+}

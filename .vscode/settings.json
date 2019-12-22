@@ -1,0 +1,25 @@
+{
+  "editor.tabSize": 2,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "es5",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/*.pyc": true,
+    "**/*.rdb": true,
+    "**/CVS": true,
+    "**/node_modules": true
+  },
+  "javascript.validate.enable": false,
+  "editor.formatOnSave": true,
+  "search.exclude": {
+    "**/node_modules/*": true
+  },
+  "eslint.enable": true,
+  "prettier.printWidth": 120,
+  "python.formatting.provider": "autopep8"
+}
