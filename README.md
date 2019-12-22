@@ -9,6 +9,6 @@ To run, first install dependencies with `yarn` and then run the server with `yar
 
 Performance report:
 
-برای تعداد ریکوئست بالا، مونگو مناسب نبود، برای همین یه ماژول cache نوشتم و از اون استفاده کردم که ریکوئست‌های سنگین و یا پرتکرار روی redis ذخیره و از اون برداشته بشن
+Since mongo was not suitable for high request rate, Cachify module implemented on top of redis is used to cache repetitive and database-intensive requests.
 
-در نهایت همونطور که در عکس‌های ریپورت می‌تونین ببینین تا تعداد 200 ریکوئست بر ثانیه هم سرور بدون مشکل کار می‌کنه، اما ریسپانس تایم زیاد می‌شه چون فقط یه اینستنس از سرور node داریم.
+As a result, as presented in the reports placed at benchmark-results directory, server can sustain a load of 200 rps(request per second). However the response time gradually increases due to using only one server node.
